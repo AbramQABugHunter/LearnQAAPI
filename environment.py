@@ -12,7 +12,7 @@ class Environment:
         PROD: 'https://playground.learnqa.ru/ajax/api'
     }
 
-    def __int__(self):
+    def __init__(self):
         try:
             self.env = os.environ['ENV']
         except KeyError:
